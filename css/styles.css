@@ -1,9 +1,17 @@
 #pig{
-    background: chartreuse;
-    color: #000000;
+    color: black;
 }
 
 .jumbotron h1{
     text-align: center;
-    background-image: url()
+    font-family: 'Bad Script', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Frijole', cursive;
+}
+
+.jumbotron{
+    background-image: url(../img/pigs1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000;
 }
