@@ -54,7 +54,7 @@ $('#hold-btn').click(function () {
         scores[activePlayer] += roundScore;
         $('#score-' + activePlayer).text(scores[activePlayer]);
 
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= 100) {
             alert('Player ' + (activePlayer + 1) + ' has won!')
             gamePlaying = false;
         } else {
