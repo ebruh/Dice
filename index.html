@@ -8,22 +8,22 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script> -->
 
-        <link href="https://fonts.googleapis.com/css?family=Bad+Script|Merienda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Merienda" rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css?family=Bad+Script|Frijole|Merienda" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Frijole|Merienda" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Pig Dice</title>
 </head>
 
 <body>
-  <div class="jumbotron">
-            <h1>welcome to pig dice</h1>
-        </div>
+    <div class="jumbotron">
+        <h1>welcome to pig dice</h1>
+    </div>
 
     <div class="row container">
 
@@ -35,8 +35,8 @@
 
             <h3>The Game</h3>
 
-            <p>In each turn a player rolls the dice repeatedly untill either "1" is rolled or player decides to hold and pass on
-                the turn to its opponent.</p>
+            <p>In each turn a player rolls the dice repeatedly untill either "1" is rolled or player decides to hold and pass
+                on the turn to its opponent.</p>
 
             <p>The number player rolls is added to a temporary score; If the player rolls a 1, he lose his temporary score and
                 turn is passed to their opponent.</p>
@@ -44,18 +44,14 @@
             <p>If the player gets any other number he can decide to continue and roll the dice.</p>
 
             <p>If the player decides to pass, then his turn total is added to the overall score.</p>
-            
+
             <p>The first player to score 100 points wins the game.</p>
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-2">
 
             <h2>Player 1</h2>
-
-            <p>dice rolled:
-                <span id="dice"></span>
-            </p>
 
             <p>current round:
                 <span id="current"></span>
@@ -73,43 +69,49 @@
 
             </ul>
 
-            <button type="button" id="pigdice" class="btn btn-success">Roll Dice!</button>
-            <button type="button" class="btn btn-info">
-                pass turn!
-            </button>
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 controls">
 
-                <h2>Player 2</h2>
-    
-                <p>dice rolled:
-                    <span id="dice"></span>
-                </p>
-    
-                <p>current round:
-                    <span id="round"></span>
-                </p>
-    
-                <p>Score:
-                    <span id="score"></span>
-                </p>
-    
-                <ul class="pig2">
-    
-                </ul>
-    
-                <ul id="pig3">
-    
-                </ul>
-    
-                <button type="button" id="pigdice" class="btn btn-success">Roll Dice!</button>
-                <button type="button" id="pass-btn" class="btn btn-info">
-                    pass turn!
-                </button>
-                
+            <div class="new-game">
+                <button type="button" id="pigdice" class="btn btn-success">New Game</button>
             </div>
+
+                <img src="../img/die-1.svg" alt="">
+
+            <div class="controls-btns">
+                <button type="button" id="pigdice" class="btn btn-success">Roll Dice!</button>
+
+                <button type="button" id="pass-btn" class="btn btn-info">
+                    Hold
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-md-2">
+
+            <h2>Player 2</h2>
+
+            <p>current round:
+                <span id="round"></span>
+            </p>
+
+            <p>Score:
+                <span id="score"></span>
+            </p>
+
+            <ul class="pig2">
+
+            </ul>
+
+            <ul id="pig3">
+
+            </ul>
+
+
+        </div>
 
 
     </div>
