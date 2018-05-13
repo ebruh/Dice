@@ -2,3 +2,8 @@
     background: chartreuse;
     color: #000000;
 }
+
+.jumbotron h1{
+    text-align: center;
+    background-image: url()
+}

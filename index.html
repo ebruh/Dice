@@ -14,10 +14,15 @@
 </head>
 
 <body>
+        <div class="jumbotron">
+                <h1>welcome to pig dice</h1>
+            </div>
 
     <div class="row container">
-        
-        <div class="col-md-3" id="pig">
+
+      
+
+        <div class="col-md-4" id="pig">
 
             <h2>Game Rules</h2>
 
@@ -41,7 +46,7 @@
 
         </div>
 
-        <div class="col-md-5">
+        <div class="col-md-4 well">
 
             <h2>Player 1</h2>
 
@@ -63,11 +68,45 @@
 
             <ul id="pig1">
 
-                <button type="button" id="pigdice" class="btn btn-success">Roll Dice!</button>
-
             </ul>
 
+            <button type="button" id="pigdice" class="btn btn-success">Roll Dice!</button>
+            <button type="button" id="pass-btn" class="btn btn-info">
+                pass turn!
+            </button>
+
         </div>
+
+        <div class="col-md-4">
+
+                <h2>Player 2</h2>
+    
+                <p>dice rolled:
+                    <span id="dice"></span>
+                </p>
+    
+                <p>current round:
+                    <span id="round"></span>
+                </p>
+    
+                <p>Score:
+                    <span id="score"></span>
+                </p>
+    
+                <ul class="pig2">
+    
+                </ul>
+    
+                <ul id="pig3">
+    
+                </ul>
+    
+                <button type="button" id="pigdice" class="btn btn-success">Roll Dice!</button>
+                <button type="button" id="pass-btn" class="btn btn-info">
+                    pass turn!
+                </button>
+                
+            </div>
 
 
     </div>
