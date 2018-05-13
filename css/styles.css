@@ -31,3 +31,25 @@ font-family: 'Frijole', cursive;
 .new-game{
     margin-bottom: 10px;
 }
+
+
+  .pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+    color: blueviolet;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+        transform: scale(1)
+    }
+    50% { 
+        opacity: 1.0;
+        transform: scale(1.1);
+    }
+    100% { 
+        opacity: 0.5;
+        transform: scale(1)
+    }
+}
