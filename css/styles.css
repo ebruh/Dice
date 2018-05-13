@@ -53,3 +53,6 @@ font-family: 'Frijole', cursive;
         transform: scale(1)
     }
 }
+.round-score{
+    font-size: 1.3rem;
+}
